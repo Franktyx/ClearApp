@@ -14,6 +14,9 @@
 		C470B4D51B069BFE00FFA61A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C470B4D41B069BFE00FFA61A /* Images.xcassets */; };
 		C470B4D81B069BFE00FFA61A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C470B4D61B069BFE00FFA61A /* LaunchScreen.xib */; };
 		C470B4E41B069BFE00FFA61A /* ClearAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C470B4E31B069BFE00FFA61A /* ClearAppTests.swift */; };
+		C470B4EE1B069D1D00FFA61A /* myTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C470B4ED1B069D1D00FFA61A /* myTableViewCell.swift */; };
+		C4727AE61B0D689B00BF64A8 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4727AE51B0D689B00BF64A8 /* ToDoItem.swift */; };
+		C4727AE81B0D80F300BF64A8 /* StrikeThroughText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4727AE71B0D80F300BF64A8 /* StrikeThroughText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C470B4DD1B069BFE00FFA61A /* ClearAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C470B4E21B069BFE00FFA61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C470B4E31B069BFE00FFA61A /* ClearAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearAppTests.swift; sourceTree = "<group>"; };
+		C470B4ED1B069D1D00FFA61A /* myTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTableViewCell.swift; sourceTree = "<group>"; };
+		C4727AE51B0D689B00BF64A8 /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		C4727AE71B0D80F300BF64A8 /* StrikeThroughText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeThroughText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 			children = (
 				C470B4CA1B069BFE00FFA61A /* AppDelegate.swift */,
 				C470B4CF1B069BFE00FFA61A /* ViewController.swift */,
+				C4727AE71B0D80F300BF64A8 /* StrikeThroughText.swift */,
+				C4727AE51B0D689B00BF64A8 /* ToDoItem.swift */,
+				C470B4ED1B069D1D00FFA61A /* myTableViewCell.swift */,
 				C470B4D11B069BFE00FFA61A /* Main.storyboard */,
 				C470B4D41B069BFE00FFA61A /* Images.xcassets */,
 				C470B4D61B069BFE00FFA61A /* LaunchScreen.xib */,
@@ -164,6 +173,7 @@
 				TargetAttributes = {
 					C470B4C41B069BFE00FFA61A = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = N34N58LNG3;
 					};
 					C470B4DC1B069BFE00FFA61A = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -216,6 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C470B4D01B069BFE00FFA61A /* ViewController.swift in Sources */,
+				C470B4EE1B069D1D00FFA61A /* myTableViewCell.swift in Sources */,
+				C4727AE81B0D80F300BF64A8 /* StrikeThroughText.swift in Sources */,
+				C4727AE61B0D689B00BF64A8 /* ToDoItem.swift in Sources */,
 				C470B4CB1B069BFE00FFA61A /* AppDelegate.swift in Sources */,
 				C470B4CE1B069BFE00FFA61A /* ClearApp.xcdatamodeld in Sources */,
 			);
@@ -346,9 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ClearApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,9 +372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ClearApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -415,6 +434,7 @@
 				C470B4E91B069BFE00FFA61A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C470B4EA1B069BFE00FFA61A /* Build configuration list for PBXNativeTarget "ClearAppTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +443,7 @@
 				C470B4EC1B069BFE00FFA61A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
